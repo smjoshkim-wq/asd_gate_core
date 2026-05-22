@@ -1,0 +1,100 @@
+{
+  "total": 8,
+  "passed": 5,
+  "by_invariant": {
+    "JURISDICTION": 2,
+    "ORDER": 6
+  },
+  "mapping_direct": 5,
+  "mapping_analog": 3,
+  "cases": [
+    {
+      "case": "Vioxx: Sponsor modifies DSMB SOP (JURISDICTION)",
+      "pass": true,
+      "decision": "INADMISSIBLE",
+      "invariant": "JURISDICTION",
+      "expected": "JURISDICTION",
+      "source": "FDA Advisory Committee Briefing (Feb 2005); Graham et al. Lancet 2005",
+      "lead_time": "~4 years to market withdrawal",
+      "mapping": "Direct 1:1",
+      "note": ""
+    },
+    {
+      "case": "Theranos: clinical testing before required activation (ORDER)",
+      "pass": false,
+      "decision": "ADMISSIBLE",
+      "invariant": null,
+      "expected": "ORDER",
+      "source": "CMS Survey (Jan 2016); FDA Form 483 (Aug 2015); SEC v. Holmes (2018)",
+      "lead_time": "~3 years to CMS sanctions",
+      "mapping": "Structural analog",
+      "note": ""
+    },
+    {
+      "case": "EXONDYS: NDA submitted from PHASE_II (ORDER)",
+      "pass": true,
+      "decision": "INADMISSIBLE",
+      "invariant": "ORDER",
+      "expected": "ORDER",
+      "source": "FDA AdCom Transcript Apr 2016; Kesselheim & Avorn NEJM 2016",
+      "lead_time": "~2 years to confirmatory trial failure",
+      "mapping": "Direct 1:1",
+      "note": ""
+    },
+    {
+      "case": "Bezwoda: PI conducts DSMB unblinding (JURISDICTION)",
+      "pass": true,
+      "decision": "INADMISSIBLE",
+      "invariant": "JURISDICTION",
+      "expected": "JURISDICTION",
+      "source": "Weiss et al. J Clin Oncol 2001; ASCO Investigation Report 2000",
+      "lead_time": "~5 years to ASCO investigation",
+      "mapping": "Direct 1:1",
+      "note": ""
+    },
+    {
+      "case": "FDA BIMO: PI dose escalation without S1 loop (ORDER)",
+      "pass": false,
+      "decision": "ADMISSIBLE",
+      "invariant": null,
+      "expected": "ORDER",
+      "source": "Getz KA Drug Information Journal 2010; FDA BIMO Metrics FY2018",
+      "lead_time": "Variable BIMO inspection 6-24 months",
+      "mapping": "Structural analog",
+      "note": ""
+    },
+    {
+      "case": "Celebrex CLASS: NDA from PHASE_II (ORDER)",
+      "pass": true,
+      "decision": "INADMISSIBLE",
+      "invariant": "ORDER",
+      "expected": "ORDER",
+      "source": "J\u00fcni et al. BMJ 2002; Hrachovec & Mora JAMA 2001",
+      "lead_time": "~1 year NDA to full data disclosure",
+      "mapping": "Direct 1:1",
+      "note": ""
+    },
+    {
+      "case": "Diedrich/Sepracor: PI C1 without S1 safety gate",
+      "pass": false,
+      "decision": "ADMISSIBLE",
+      "invariant": null,
+      "expected": "ORDER",
+      "source": "FDA Warning Letter cited in Bhatt DL NEJM 2008; 21 CFR 312.32",
+      "lead_time": "~6 months to Warning Letter",
+      "mapping": "Direct 1:1",
+      "note": ""
+    },
+    {
+      "case": "Ranbaxy: NDA on fabricated P1 \u2014 R1 before PHASE_III (ORDER)",
+      "pass": true,
+      "decision": "INADMISSIBLE",
+      "invariant": "ORDER",
+      "expected": "ORDER",
+      "source": "FDA Import Alert 66-40 (2008); DOJ $500M settlement (2013)",
+      "lead_time": "~5 years to DOJ settlement",
+      "mapping": "Structural analog",
+      "note": ""
+    }
+  ]
+}

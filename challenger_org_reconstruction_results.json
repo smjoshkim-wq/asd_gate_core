@@ -1,0 +1,93 @@
+{
+  "incident": "Challenger STS-51-L \u2014 Pre-launch Decision",
+  "source": "Rogers Commission Report Vols. I, IV; Boisjoly testimony",
+  "compiler": "org_workflow_compiler_v0_1",
+  "reconstruction_type": "Direct 1:1",
+  "sequences": {
+    "primary": [
+      {
+        "step": 1,
+        "timestamp": 0.0,
+        "action": "read_document",
+        "decision": "ADMISSIBLE",
+        "invariant": null,
+        "from_state": "IDLE",
+        "to_state": "REVIEWING"
+      },
+      {
+        "step": 2,
+        "timestamp": 5.0,
+        "action": "review_request",
+        "decision": "ADMISSIBLE",
+        "invariant": null,
+        "from_state": "REVIEWING",
+        "to_state": "REVIEWING"
+      },
+      {
+        "step": 3,
+        "timestamp": 10.0,
+        "action": "assess_risk",
+        "decision": "ADMISSIBLE",
+        "invariant": null,
+        "from_state": "REVIEWING",
+        "to_state": "ASSESSING"
+      },
+      {
+        "step": 4,
+        "timestamp": 15.0,
+        "action": "evaluate_compliance",
+        "decision": "ADMISSIBLE",
+        "invariant": null,
+        "from_state": "ASSESSING",
+        "to_state": "ASSESSING"
+      },
+      {
+        "step": 5,
+        "timestamp": 20.0,
+        "action": "flag_concern",
+        "decision": "ADMISSIBLE",
+        "invariant": null,
+        "from_state": "ASSESSING",
+        "to_state": "RECOMMENDING"
+      },
+      {
+        "step": 6,
+        "timestamp": 25.0,
+        "action": "escalate",
+        "decision": "ADMISSIBLE",
+        "invariant": null,
+        "from_state": "RECOMMENDING",
+        "to_state": "RECOMMENDING"
+      },
+      {
+        "step": 7,
+        "timestamp": 30.0,
+        "action": "recommend_approval",
+        "decision": "INADMISSIBLE",
+        "invariant": "EXIT",
+        "from_state": "IDLE",
+        "to_state": null
+      },
+      {
+        "step": 8,
+        "timestamp": 35.0,
+        "action": "sign_contract",
+        "decision": "INADMISSIBLE",
+        "invariant": "EXIT",
+        "from_state": "IDLE",
+        "to_state": null
+      }
+    ],
+    "jurisdiction_isolated": [
+      {
+        "step": 1,
+        "timestamp": 100.0,
+        "action": "recommend_approval",
+        "decision": "INADMISSIBLE",
+        "invariant": "JURISDICTION",
+        "from_state": "IDLE",
+        "to_state": null
+      }
+    ]
+  }
+}

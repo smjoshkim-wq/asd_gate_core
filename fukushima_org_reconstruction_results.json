@@ -1,0 +1,89 @@
+{
+  "incident": "Fukushima Daiichi 2011 (Org Workflow)",
+  "substrate": "Org Workflow",
+  "scope": "TEPCO 2008 Tsunami Risk Assessment Override",
+  "source": "NAIIC; ICANPS; disclosed TEPCO internal documents",
+  "reconstruction_type": "Structural Analog",
+  "precision_class": "Month-level",
+  "external_trigger": "Tohoku tsunami (Mar 11, 2011)",
+  "lead_time_to_trigger_years": 2.9,
+  "results": [
+    {
+      "step": 1,
+      "timestamp_days": 0.0,
+      "actor": "analyst_alice",
+      "role": "Analyst",
+      "action": "review_request",
+      "decision": "ADMISSIBLE",
+      "invariant": null,
+      "from_state": "IDLE",
+      "to_state": "REVIEWING"
+    },
+    {
+      "step": 2,
+      "timestamp_days": 30.0,
+      "actor": "analyst_alice",
+      "role": "Analyst",
+      "action": "read_document",
+      "decision": "ADMISSIBLE",
+      "invariant": null,
+      "from_state": "REVIEWING",
+      "to_state": "REVIEWING"
+    },
+    {
+      "step": 3,
+      "timestamp_days": 90.0,
+      "actor": "analyst_alice",
+      "role": "Analyst",
+      "action": "assess_risk",
+      "decision": "ADMISSIBLE",
+      "invariant": null,
+      "from_state": "REVIEWING",
+      "to_state": "ASSESSING"
+    },
+    {
+      "step": 4,
+      "timestamp_days": 100.0,
+      "actor": "analyst_alice",
+      "role": "Analyst",
+      "action": "evaluate_compliance",
+      "decision": "ADMISSIBLE",
+      "invariant": null,
+      "from_state": "ASSESSING",
+      "to_state": "ASSESSING"
+    },
+    {
+      "step": 5,
+      "timestamp_days": 130.0,
+      "actor": "analyst_alice",
+      "role": "Analyst",
+      "action": "recommend_approval",
+      "decision": "ADMISSIBLE",
+      "invariant": null,
+      "from_state": "ASSESSING",
+      "to_state": "RECOMMENDING"
+    },
+    {
+      "step": 6,
+      "timestamp_days": 135.0,
+      "actor": "analyst_alice",
+      "role": "Analyst",
+      "action": "flag_concern",
+      "decision": "ADMISSIBLE",
+      "invariant": null,
+      "from_state": "RECOMMENDING",
+      "to_state": "RECOMMENDING"
+    },
+    {
+      "step": 7,
+      "timestamp_days": 160.0,
+      "actor": "approver_dave",
+      "role": "Approver",
+      "action": "recommend_approval",
+      "decision": "INADMISSIBLE",
+      "invariant": "EXIT",
+      "from_state": "IDLE",
+      "to_state": null
+    }
+  ]
+}

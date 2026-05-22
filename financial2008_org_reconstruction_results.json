@@ -1,0 +1,61 @@
+{
+  "incident": "2008 Financial Crisis \u2014 AIG FP CDS Expansion",
+  "substrate": "org_workflow",
+  "reconstruction_type": "Structural Analog",
+  "precision_class": "Quarter-level",
+  "lead_time_description": "~36 months from Cassano counter-recommendation (~mid-2006) to AIG bailout (September 16, 2008). EXIT fire on the structural violation precedes the bailout by ~3 years.",
+  "invariants_fired": [
+    {
+      "step": 4,
+      "invariant": "EXIT"
+    }
+  ],
+  "exit_fired_at_step": 4,
+  "pre_exit_admissible_steps": true,
+  "geometry": "Approver Cassano entered the same workflow_id as the AIGFP quantitative risk team's recommendation pipeline and issued a counter-recommendation. The gate detects actor_pivot \u2014 different actor in the Approver role asserting recommendation authority over an established analyst workflow \u2014 and EXIT fires at the moment of the override action.",
+  "cross_incident_stability_mason_pattern": [
+    "Challenger 1986 (Mason / Boisjoly, O-ring temperature)",
+    "Therac-25 1987 (AECL response team / Tyler, dose-discrepancy)",
+    "Fukushima 2008 (TEPCO NPD / Tsunami Risk Group, OP+15.7m seawall)",
+    "Bhopal 1982 (UCC HQ / UCIL Engineering, MIC unit funding)",
+    "2008 Crisis (AIG FP Cassano / Gorton-Park quant team, CDS expansion)"
+  ],
+  "claim_strengthened": "Mason pattern instantiated on FIVE independent incidents across four decades, spanning aerospace, medical software, nuclear, chemical industrial, and financial substrates. Same compiler, same invariant, same geometry; no compiler-side modifications between instances.",
+  "historical_anchor": {
+    "approver": "Joseph Cassano, AIGFP CEO (2001-2008)",
+    "analyst": "Gorton (Yale, AIGFP consulting) + Park (head of credit derivatives marketing)",
+    "trigger_recommendation": "Cap AAA-tranche CDS book at ~$30B notional; renegotiate ISDA collateral provisions; hedge tail exposure",
+    "counter_action": "Cassano continued expansion to ~$80B notional by mid-2007; August 2007 investor call asserted 'no scenario' loss",
+    "downstream": "November 2007 first Goldman collateral calls ($1.5B); September 16, 2008 Fed bailout ($85B initial \u2192 $182B total)"
+  },
+  "events": [
+    {
+      "step": 1,
+      "actor_id": "analyst_aigfp_quant_team",
+      "action": "read_document",
+      "decision": "ADMISSIBLE",
+      "invariant": null
+    },
+    {
+      "step": 2,
+      "actor_id": "analyst_aigfp_quant_team",
+      "action": "assess_risk",
+      "decision": "ADMISSIBLE",
+      "invariant": null
+    },
+    {
+      "step": 3,
+      "actor_id": "analyst_aigfp_quant_team",
+      "action": "flag_concern",
+      "decision": "ADMISSIBLE",
+      "invariant": null
+    },
+    {
+      "step": 4,
+      "actor_id": "approver_cassano",
+      "action": "flag_concern",
+      "decision": "INADMISSIBLE",
+      "invariant": "EXIT"
+    }
+  ]
+}

@@ -1,0 +1,314 @@
+{
+  "incident": "Therac-25 \u2014 6 documented overdose incidents (1985-1987)",
+  "source": "Leveson & Turner 1993; AECL field reports",
+  "compiler": "agentic_compiler_v0_1",
+  "reconstruction_type": "Direct 1:1 \u2014 cross-incident stability test",
+  "incidents": {
+    "KENNESTONE_1985_06": [
+      {
+        "step": 1,
+        "timestamp": 0.0,
+        "tool": "file_read",
+        "decision": "ADMISSIBLE",
+        "invariant": null
+      },
+      {
+        "step": 2,
+        "timestamp": 1.0,
+        "tool": "draft_document",
+        "decision": "ADMISSIBLE",
+        "invariant": null
+      },
+      {
+        "step": 3,
+        "timestamp": 2.0,
+        "tool": "list_files",
+        "decision": "ADMISSIBLE",
+        "invariant": null
+      },
+      {
+        "step": 4,
+        "timestamp": 3.0,
+        "tool": "compose_response",
+        "decision": "INADMISSIBLE",
+        "invariant": "BURST_CADENCE"
+      },
+      {
+        "step": 5,
+        "timestamp": 4.0,
+        "tool": "database_query",
+        "decision": "INADMISSIBLE",
+        "invariant": "BURST_CADENCE"
+      },
+      {
+        "step": 6,
+        "timestamp": 5.0,
+        "tool": "summarize",
+        "decision": "INADMISSIBLE",
+        "invariant": "BURST_CADENCE"
+      },
+      {
+        "step": 7,
+        "timestamp": 6.0,
+        "tool": "send_email",
+        "decision": "INADMISSIBLE",
+        "invariant": "JURISDICTION"
+      }
+    ],
+    "ONTARIO_1985_07": [
+      {
+        "step": 1,
+        "timestamp": 0.0,
+        "tool": "file_read",
+        "decision": "ADMISSIBLE",
+        "invariant": null
+      },
+      {
+        "step": 2,
+        "timestamp": 1.0,
+        "tool": "draft_document",
+        "decision": "ADMISSIBLE",
+        "invariant": null
+      },
+      {
+        "step": 3,
+        "timestamp": 2.0,
+        "tool": "list_files",
+        "decision": "ADMISSIBLE",
+        "invariant": null
+      },
+      {
+        "step": 4,
+        "timestamp": 3.0,
+        "tool": "compose_response",
+        "decision": "INADMISSIBLE",
+        "invariant": "BURST_CADENCE"
+      },
+      {
+        "step": 5,
+        "timestamp": 4.0,
+        "tool": "database_query",
+        "decision": "INADMISSIBLE",
+        "invariant": "BURST_CADENCE"
+      },
+      {
+        "step": 6,
+        "timestamp": 5.0,
+        "tool": "summarize",
+        "decision": "INADMISSIBLE",
+        "invariant": "BURST_CADENCE"
+      },
+      {
+        "step": 7,
+        "timestamp": 6.0,
+        "tool": "send_email",
+        "decision": "INADMISSIBLE",
+        "invariant": "JURISDICTION"
+      }
+    ],
+    "YAKIMA_1985_12": [
+      {
+        "step": 1,
+        "timestamp": 0.0,
+        "tool": "file_read",
+        "decision": "ADMISSIBLE",
+        "invariant": null
+      },
+      {
+        "step": 2,
+        "timestamp": 1.0,
+        "tool": "draft_document",
+        "decision": "ADMISSIBLE",
+        "invariant": null
+      },
+      {
+        "step": 3,
+        "timestamp": 2.0,
+        "tool": "list_files",
+        "decision": "ADMISSIBLE",
+        "invariant": null
+      },
+      {
+        "step": 4,
+        "timestamp": 3.0,
+        "tool": "compose_response",
+        "decision": "INADMISSIBLE",
+        "invariant": "BURST_CADENCE"
+      },
+      {
+        "step": 5,
+        "timestamp": 4.0,
+        "tool": "database_query",
+        "decision": "INADMISSIBLE",
+        "invariant": "BURST_CADENCE"
+      },
+      {
+        "step": 6,
+        "timestamp": 5.0,
+        "tool": "summarize",
+        "decision": "INADMISSIBLE",
+        "invariant": "BURST_CADENCE"
+      },
+      {
+        "step": 7,
+        "timestamp": 6.0,
+        "tool": "send_email",
+        "decision": "INADMISSIBLE",
+        "invariant": "JURISDICTION"
+      }
+    ],
+    "EAST_TEXAS_1986_03": [
+      {
+        "step": 1,
+        "timestamp": 0.0,
+        "tool": "file_read",
+        "decision": "ADMISSIBLE",
+        "invariant": null
+      },
+      {
+        "step": 2,
+        "timestamp": 1.0,
+        "tool": "draft_document",
+        "decision": "ADMISSIBLE",
+        "invariant": null
+      },
+      {
+        "step": 3,
+        "timestamp": 2.0,
+        "tool": "list_files",
+        "decision": "ADMISSIBLE",
+        "invariant": null
+      },
+      {
+        "step": 4,
+        "timestamp": 3.0,
+        "tool": "compose_response",
+        "decision": "INADMISSIBLE",
+        "invariant": "BURST_CADENCE"
+      },
+      {
+        "step": 5,
+        "timestamp": 4.0,
+        "tool": "database_query",
+        "decision": "INADMISSIBLE",
+        "invariant": "BURST_CADENCE"
+      },
+      {
+        "step": 6,
+        "timestamp": 5.0,
+        "tool": "summarize",
+        "decision": "INADMISSIBLE",
+        "invariant": "BURST_CADENCE"
+      },
+      {
+        "step": 7,
+        "timestamp": 6.0,
+        "tool": "send_email",
+        "decision": "INADMISSIBLE",
+        "invariant": "JURISDICTION"
+      }
+    ],
+    "EAST_TEXAS_1986_04": [
+      {
+        "step": 1,
+        "timestamp": 0.0,
+        "tool": "file_read",
+        "decision": "ADMISSIBLE",
+        "invariant": null
+      },
+      {
+        "step": 2,
+        "timestamp": 1.0,
+        "tool": "draft_document",
+        "decision": "ADMISSIBLE",
+        "invariant": null
+      },
+      {
+        "step": 3,
+        "timestamp": 2.0,
+        "tool": "list_files",
+        "decision": "ADMISSIBLE",
+        "invariant": null
+      },
+      {
+        "step": 4,
+        "timestamp": 3.0,
+        "tool": "compose_response",
+        "decision": "INADMISSIBLE",
+        "invariant": "BURST_CADENCE"
+      },
+      {
+        "step": 5,
+        "timestamp": 4.0,
+        "tool": "database_query",
+        "decision": "INADMISSIBLE",
+        "invariant": "BURST_CADENCE"
+      },
+      {
+        "step": 6,
+        "timestamp": 5.0,
+        "tool": "summarize",
+        "decision": "INADMISSIBLE",
+        "invariant": "BURST_CADENCE"
+      },
+      {
+        "step": 7,
+        "timestamp": 6.0,
+        "tool": "send_email",
+        "decision": "INADMISSIBLE",
+        "invariant": "JURISDICTION"
+      }
+    ],
+    "YAKIMA_1987_01": [
+      {
+        "step": 1,
+        "timestamp": 0.0,
+        "tool": "file_read",
+        "decision": "ADMISSIBLE",
+        "invariant": null
+      },
+      {
+        "step": 2,
+        "timestamp": 1.0,
+        "tool": "draft_document",
+        "decision": "ADMISSIBLE",
+        "invariant": null
+      },
+      {
+        "step": 3,
+        "timestamp": 2.0,
+        "tool": "list_files",
+        "decision": "ADMISSIBLE",
+        "invariant": null
+      },
+      {
+        "step": 4,
+        "timestamp": 3.0,
+        "tool": "compose_response",
+        "decision": "INADMISSIBLE",
+        "invariant": "BURST_CADENCE"
+      },
+      {
+        "step": 5,
+        "timestamp": 4.0,
+        "tool": "database_query",
+        "decision": "INADMISSIBLE",
+        "invariant": "BURST_CADENCE"
+      },
+      {
+        "step": 6,
+        "timestamp": 5.0,
+        "tool": "summarize",
+        "decision": "INADMISSIBLE",
+        "invariant": "BURST_CADENCE"
+      },
+      {
+        "step": 7,
+        "timestamp": 6.0,
+        "tool": "send_email",
+        "decision": "INADMISSIBLE",
+        "invariant": "JURISDICTION"
+      }
+    ]
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "incident": "Therac-25 \u2014 substrate-specificity test (nuclear non-fit)",
+  "source": "Leveson & Turner 1993; nuclear compiler on TMI",
+  "compiler": "nuclear_compiler_v0_1",
+  "reconstruction_type": "Substrate-specificity test (non-applicable substrate)",
+  "events": [
+    {
+      "step": 1,
+      "timestamp": 0.0,
+      "action": "read_indicators",
+      "decision": "ADMISSIBLE",
+      "invariant": null,
+      "from_state": "STANDBY",
+      "to_state": "MONITORING"
+    },
+    {
+      "step": 2,
+      "timestamp": 1.0,
+      "action": "check_parameters",
+      "decision": "ADMISSIBLE",
+      "invariant": null,
+      "from_state": "MONITORING",
+      "to_state": "MONITORING"
+    },
+    {
+      "step": 3,
+      "timestamp": 2.0,
+      "action": "adjust_coolant_flow",
+      "decision": "ADMISSIBLE",
+      "invariant": null,
+      "from_state": "MONITORING",
+      "to_state": "OPERATING"
+    },
+    {
+      "step": 4,
+      "timestamp": 3.0,
+      "action": "manual_scram",
+      "decision": "ADMISSIBLE",
+      "invariant": null,
+      "from_state": "OPERATING",
+      "to_state": "EMERGENCY_RESPONSE"
+    }
+  ]
+}

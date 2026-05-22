@@ -1,0 +1,217 @@
+{
+  "incident": "2008 Financial Crisis (Cross-Firm Mason Pattern)",
+  "substrate": "Org Workflow",
+  "scope": "Single-substrate, three-firm reconstruction",
+  "source": "Valukas Report 2010; FCIC Report 2011",
+  "reconstruction_type": "Structural Analog (cross-firm stability test)",
+  "precision_class": "Month-level",
+  "firms": [
+    {
+      "firm": "Lehman Brothers (Repo 105)",
+      "violation_step": 6,
+      "invariant": "EXIT",
+      "lead_days_to_consequence": 153.0,
+      "consequence_label": "Lehman bankruptcy (Sep 15, 2008)",
+      "results": [
+        {
+          "step": 1,
+          "actor": "analyst_alice",
+          "role": "Analyst",
+          "action": "review_request",
+          "decision": "ADMISSIBLE",
+          "invariant": null,
+          "from_state": "IDLE",
+          "to_state": "REVIEWING"
+        },
+        {
+          "step": 2,
+          "actor": "analyst_alice",
+          "role": "Analyst",
+          "action": "assess_risk",
+          "decision": "ADMISSIBLE",
+          "invariant": null,
+          "from_state": "REVIEWING",
+          "to_state": "ASSESSING"
+        },
+        {
+          "step": 3,
+          "actor": "analyst_alice",
+          "role": "Analyst",
+          "action": "evaluate_compliance",
+          "decision": "ADMISSIBLE",
+          "invariant": null,
+          "from_state": "ASSESSING",
+          "to_state": "ASSESSING"
+        },
+        {
+          "step": 4,
+          "actor": "analyst_alice",
+          "role": "Analyst",
+          "action": "flag_concern",
+          "decision": "ADMISSIBLE",
+          "invariant": null,
+          "from_state": "ASSESSING",
+          "to_state": "RECOMMENDING"
+        },
+        {
+          "step": 5,
+          "actor": "analyst_alice",
+          "role": "Analyst",
+          "action": "escalate",
+          "decision": "ADMISSIBLE",
+          "invariant": null,
+          "from_state": "RECOMMENDING",
+          "to_state": "RECOMMENDING"
+        },
+        {
+          "step": 6,
+          "actor": "approver_dave",
+          "role": "Approver",
+          "action": "recommend_approval",
+          "decision": "INADMISSIBLE",
+          "invariant": "EXIT",
+          "from_state": "IDLE",
+          "to_state": null
+        }
+      ]
+    },
+    {
+      "firm": "AIG Financial Products (CDS Concentration)",
+      "violation_step": 6,
+      "invariant": "EXIT",
+      "lead_days_to_consequence": 754.0,
+      "consequence_label": "AIG bailout (Sep 16, 2008)",
+      "results": [
+        {
+          "step": 1,
+          "actor": "analyst_bob",
+          "role": "Analyst",
+          "action": "review_request",
+          "decision": "ADMISSIBLE",
+          "invariant": null,
+          "from_state": "IDLE",
+          "to_state": "REVIEWING"
+        },
+        {
+          "step": 2,
+          "actor": "analyst_bob",
+          "role": "Analyst",
+          "action": "assess_risk",
+          "decision": "ADMISSIBLE",
+          "invariant": null,
+          "from_state": "REVIEWING",
+          "to_state": "ASSESSING"
+        },
+        {
+          "step": 3,
+          "actor": "analyst_bob",
+          "role": "Analyst",
+          "action": "evaluate_compliance",
+          "decision": "ADMISSIBLE",
+          "invariant": null,
+          "from_state": "ASSESSING",
+          "to_state": "ASSESSING"
+        },
+        {
+          "step": 4,
+          "actor": "analyst_bob",
+          "role": "Analyst",
+          "action": "flag_concern",
+          "decision": "ADMISSIBLE",
+          "invariant": null,
+          "from_state": "ASSESSING",
+          "to_state": "RECOMMENDING"
+        },
+        {
+          "step": 5,
+          "actor": "analyst_bob",
+          "role": "Analyst",
+          "action": "escalate",
+          "decision": "ADMISSIBLE",
+          "invariant": null,
+          "from_state": "RECOMMENDING",
+          "to_state": "RECOMMENDING"
+        },
+        {
+          "step": 6,
+          "actor": "approver_eve",
+          "role": "Approver",
+          "action": "recommend_approval",
+          "decision": "INADMISSIBLE",
+          "invariant": "EXIT",
+          "from_state": "IDLE",
+          "to_state": null
+        }
+      ]
+    },
+    {
+      "firm": "Citigroup (CDO Warehouse)",
+      "violation_step": 6,
+      "invariant": "EXIT",
+      "lead_days_to_consequence": 280.0,
+      "consequence_label": "Citi Q4 2007 writedown (Nov 2007)",
+      "results": [
+        {
+          "step": 1,
+          "actor": "analyst_carol",
+          "role": "Analyst",
+          "action": "review_request",
+          "decision": "ADMISSIBLE",
+          "invariant": null,
+          "from_state": "IDLE",
+          "to_state": "REVIEWING"
+        },
+        {
+          "step": 2,
+          "actor": "analyst_carol",
+          "role": "Analyst",
+          "action": "assess_risk",
+          "decision": "ADMISSIBLE",
+          "invariant": null,
+          "from_state": "REVIEWING",
+          "to_state": "ASSESSING"
+        },
+        {
+          "step": 3,
+          "actor": "analyst_carol",
+          "role": "Analyst",
+          "action": "evaluate_compliance",
+          "decision": "ADMISSIBLE",
+          "invariant": null,
+          "from_state": "ASSESSING",
+          "to_state": "ASSESSING"
+        },
+        {
+          "step": 4,
+          "actor": "analyst_carol",
+          "role": "Analyst",
+          "action": "flag_concern",
+          "decision": "ADMISSIBLE",
+          "invariant": null,
+          "from_state": "ASSESSING",
+          "to_state": "RECOMMENDING"
+        },
+        {
+          "step": 5,
+          "actor": "analyst_carol",
+          "role": "Analyst",
+          "action": "escalate",
+          "decision": "ADMISSIBLE",
+          "invariant": null,
+          "from_state": "RECOMMENDING",
+          "to_state": "RECOMMENDING"
+        },
+        {
+          "step": 6,
+          "actor": "approver_frank",
+          "role": "Approver",
+          "action": "recommend_approval",
+          "decision": "INADMISSIBLE",
+          "invariant": "EXIT",
+          "from_state": "IDLE",
+          "to_state": null
+        }
+      ]
+    }
+  ]
+}

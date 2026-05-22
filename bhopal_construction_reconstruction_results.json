@@ -1,0 +1,31 @@
+{
+  "incident": "Bhopal Disaster \u2014 UCC 1982 Audit Response",
+  "substrate": "construction",
+  "reconstruction_type": "Structural Analog",
+  "precision_class": "Month-level",
+  "lead_time_months": 30,
+  "lead_time_description": "May 1982 audit findings \u2192 Dec 2-3, 1984 release",
+  "pattern_class": "DEFICIENCY_NOTED commission (Algo / Champlain pattern)",
+  "invariants_fired": [
+    {
+      "step": 1,
+      "invariant": "ORDER"
+    }
+  ],
+  "order_fired_at_step": 1,
+  "geometry": "Owner attempts A3_Commitment from DEFICIENCY_NOTED state; DEFICIENCY_NOTED.flows contains only H1_RemediationAuth, so A3_Commitment is in-vocab but out-of-state \u2192 ORDER fires.",
+  "cross_incident_stability": [
+    "Algo Centre Mall 2012 (Owner H1 stall, ORDER)",
+    "Champlain Towers South 2021 (Owner H1 stall, ORDER)",
+    "Bhopal 1984 (UCC parent Owner, A3_Commitment from DEFICIENCY_NOTED, ORDER)"
+  ],
+  "events": [
+    {
+      "step": 1,
+      "actor_id": "ucc_parent_corp",
+      "action": "sign_schedule_a",
+      "decision": "INADMISSIBLE",
+      "invariant": "ORDER"
+    }
+  ]
+}

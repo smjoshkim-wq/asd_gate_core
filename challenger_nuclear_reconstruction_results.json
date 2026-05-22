@@ -1,0 +1,75 @@
+{
+  "incident": "Challenger STS-51-L \u2014 Launch Commit Criteria Waiver (nuclear analog)",
+  "source": "Rogers Commission Vol. I; NSTS-08171 LCC; 10 CFR 50 doctrine",
+  "compiler": "nuclear_compiler_v0_1",
+  "reconstruction_type": "Structural analog",
+  "sequences": {
+    "primary": [
+      {
+        "step": 1,
+        "timestamp": 0.0,
+        "action": "read_indicators",
+        "decision": "ADMISSIBLE",
+        "invariant": null,
+        "from_state": "STANDBY",
+        "to_state": "MONITORING"
+      },
+      {
+        "step": 2,
+        "timestamp": 5.0,
+        "action": "check_parameters",
+        "decision": "ADMISSIBLE",
+        "invariant": null,
+        "from_state": "MONITORING",
+        "to_state": "MONITORING"
+      },
+      {
+        "step": 3,
+        "timestamp": 10.0,
+        "action": "read_indicators",
+        "decision": "ADMISSIBLE",
+        "invariant": null,
+        "from_state": "STANDBY",
+        "to_state": "MONITORING"
+      },
+      {
+        "step": 4,
+        "timestamp": 15.0,
+        "action": "withdraw_control_rods",
+        "decision": "ADMISSIBLE",
+        "invariant": null,
+        "from_state": "MONITORING",
+        "to_state": "OPERATING"
+      },
+      {
+        "step": 5,
+        "timestamp": 20.0,
+        "action": "vent_containment",
+        "decision": "INADMISSIBLE",
+        "invariant": "ORDER",
+        "from_state": "OPERATING",
+        "to_state": null
+      }
+    ],
+    "alternative": [
+      {
+        "step": 1,
+        "timestamp": 100.0,
+        "action": "read_indicators",
+        "decision": "ADMISSIBLE",
+        "invariant": null,
+        "from_state": "STANDBY",
+        "to_state": "MONITORING"
+      },
+      {
+        "step": 2,
+        "timestamp": 101.0,
+        "action": "vent_containment",
+        "decision": "INADMISSIBLE",
+        "invariant": "JURISDICTION",
+        "from_state": "MONITORING",
+        "to_state": null
+      }
+    ]
+  }
+}

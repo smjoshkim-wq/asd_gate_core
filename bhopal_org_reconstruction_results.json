@@ -1,0 +1,53 @@
+{
+  "incident": "Bhopal Disaster \u2014 UCC 1982 Audit Override",
+  "substrate": "org_workflow",
+  "reconstruction_type": "Structural Analog",
+  "precision_class": "Month-level",
+  "lead_time_months": 31,
+  "lead_time_description": "May 1982 audit response \u2192 Dec 2-3, 1984 release",
+  "invariants_fired": [
+    {
+      "step": 4,
+      "invariant": "EXIT"
+    }
+  ],
+  "exit_fired_at_step": 4,
+  "pre_exit_admissible_steps": true,
+  "geometry": "Fourth instance of Mason pattern: Approver actor_pivot into Analyst workflow_id triggers EXIT via actor_pivot detection",
+  "cross_incident_stability": [
+    "Challenger 1986 (Mason/Boisjoly)",
+    "Therac-25 1987 (AECL/Tyler)",
+    "Fukushima 2008 (TEPCO NPD/Tsunami Risk Group)",
+    "Bhopal 1982 (UCC HQ/UCIL Engineering)"
+  ],
+  "events": [
+    {
+      "step": 1,
+      "actor_id": "analyst_ucil_eng",
+      "action": "read_document",
+      "decision": "ADMISSIBLE",
+      "invariant": null
+    },
+    {
+      "step": 2,
+      "actor_id": "analyst_ucil_eng",
+      "action": "assess_risk",
+      "decision": "ADMISSIBLE",
+      "invariant": null
+    },
+    {
+      "step": 3,
+      "actor_id": "analyst_ucil_eng",
+      "action": "flag_concern",
+      "decision": "ADMISSIBLE",
+      "invariant": null
+    },
+    {
+      "step": 4,
+      "actor_id": "approver_ucc_hq",
+      "action": "flag_concern",
+      "decision": "INADMISSIBLE",
+      "invariant": "EXIT"
+    }
+  ]
+}

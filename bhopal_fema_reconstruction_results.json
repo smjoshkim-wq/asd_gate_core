@@ -1,0 +1,38 @@
+{
+  "incident": "Bhopal Disaster \u2014 Dec 2-3 1984 Emergency Response",
+  "substrate": "fema",
+  "reconstruction_type": "Structural Analog",
+  "precision_class": "Minute-level",
+  "lead_time_description": "~45 min between MIC venting onset (~23:30 IST) and siren silencing by security guard (~00:15 IST); peak community exposure followed within minutes of silencing",
+  "invariants_fired": [
+    {
+      "step": 2,
+      "invariant": "EXIT"
+    }
+  ],
+  "exit_fired_at_step": 2,
+  "pre_violation_admissible": true,
+  "geometry": "Field_Resource actor (plant security guard) entered an incident_id already bound to IC Mukund and executed an AC6_PublicComm action (siren silencing). The gate detects actor_pivot before the role/state check, so EXIT fires at the moment the unauthorized actor enters the established incident with a command-level action.",
+  "cross_incident_stability_fema": [
+    "Deepwater Horizon 2010 (BP-led PublicComm \u2014 actor pivot, EXIT)",
+    "Fukushima 2011 (PM Kan Office vs LNERH IC \u2014 actor pivot, EXIT)",
+    "Bhopal 1984 (security guard vs IC Mukund \u2014 actor pivot, EXIT)"
+  ],
+  "claim_strengthened": "FEMA-substrate AC6_PublicComm actor-pivot EXIT pattern now instantiated on three independent incidents in three independent decades (1984, 2010, 2011); same compiler, same invariant, same geometry, three substrate-instances.",
+  "events": [
+    {
+      "step": 1,
+      "actor_id": "ic_mukund",
+      "action": "conduct_size_up",
+      "decision": "ADMISSIBLE",
+      "invariant": null
+    },
+    {
+      "step": 2,
+      "actor_id": "security_guard",
+      "action": "release_situation_report",
+      "decision": "INADMISSIBLE",
+      "invariant": "EXIT"
+    }
+  ]
+}

@@ -1,0 +1,163 @@
+{
+  "total": 15,
+  "passed": 12,
+  "by_invariant": {
+    "ORDER": 9,
+    "JURISDICTION": 4,
+    "BURST_CADENCE": 2
+  },
+  "mapping_direct": 13,
+  "mapping_analog": 2,
+  "incidents": [
+    {
+      "incident": "ACN CALLBACK-247: B737 KLAX 24R \u2014 LUAW, roll without clearance",
+      "pass": true,
+      "decision": "INADMISSIBLE",
+      "invariant": "ORDER",
+      "expected_invariant": "ORDER",
+      "source": "ASRS CALLBACK Newsletter #247 (NASA Ames, 2001)",
+      "lead_time": "~12 seconds (gate fires at roll initiation; ATC cancellation call ~12s later)",
+      "mapping": "Direct 1:1"
+    },
+    {
+      "incident": "ACN CALLBACK-267: A320 KDFW \u2014 wrong-frequency clearance, roll commenced",
+      "pass": true,
+      "decision": "INADMISSIBLE",
+      "invariant": "ORDER",
+      "expected_invariant": "ORDER",
+      "source": "ASRS CALLBACK Newsletter #267 (NASA Ames, 2003)",
+      "lead_time": "~8 seconds (roll initiation to opposing traffic warning from FO)",
+      "mapping": "Direct 1:1"
+    },
+    {
+      "incident": "SA-034-A: RJ KORD 10C \u2014 callsign confusion, roll with aircraft on final",
+      "pass": true,
+      "decision": "INADMISSIBLE",
+      "invariant": "ORDER",
+      "expected_invariant": "ORDER",
+      "source": "NTSB Safety Alert SA-034 (2010), Case A",
+      "lead_time": "~20 seconds (to TCAS RA / ATC go-around instruction to landing traffic)",
+      "mapping": "Direct 1:1"
+    },
+    {
+      "incident": "ICAO Doc 9870-Case4: B757 night VMC \u2014 clearance intended for different aircraft",
+      "pass": true,
+      "decision": "INADMISSIBLE",
+      "invariant": "ORDER",
+      "expected_invariant": "ORDER",
+      "source": "ICAO Doc 9870 Runway Incursion Prevention Manual, Appendix case study",
+      "lead_time": "~15 seconds (to controller stop instruction)",
+      "mapping": "Direct 1:1"
+    },
+    {
+      "incident": "ACN CALLBACK-298: B767 KJFK 31L \u2014 ATIS config change missed, LUAW-to-roll",
+      "pass": true,
+      "decision": "INADMISSIBLE",
+      "invariant": "ORDER",
+      "expected_invariant": "ORDER",
+      "source": "ASRS CALLBACK Newsletter #298 (NASA Ames, 2006)",
+      "lead_time": "~18 seconds (to crossing traffic detection by FO)",
+      "mapping": "Direct 1:1"
+    },
+    {
+      "incident": "ACN CALLBACK-280: Corp jet KSFO 28R \u2014 hold-short crossed without clearance",
+      "pass": true,
+      "decision": "INADMISSIBLE",
+      "invariant": "JURISDICTION",
+      "expected_invariant": "JURISDICTION",
+      "source": "ASRS CALLBACK Newsletter #280 (NASA Ames, 2004)",
+      "lead_time": "~25 seconds (to departure aircraft abort call)",
+      "mapping": "Direct 1:1"
+    },
+    {
+      "incident": "ACN CALLBACK-310: A321 KBOS 27 \u2014 runway crossing before clearance acknowledgment",
+      "pass": true,
+      "decision": "INADMISSIBLE",
+      "invariant": "JURISDICTION",
+      "expected_invariant": "JURISDICTION",
+      "source": "ASRS CALLBACK Newsletter #310 (NASA Ames, 2007)",
+      "lead_time": "~30 seconds (to departing aircraft rotate and clear)",
+      "mapping": "Direct 1:1"
+    },
+    {
+      "incident": "FAA Hotline KATL 26R \u2014 parallel runway confusion, roll on wrong runway",
+      "pass": true,
+      "decision": "INADMISSIBLE",
+      "invariant": "ORDER",
+      "expected_invariant": "ORDER",
+      "source": "FAA Runway Safety Hotline Report, KATL (cited in CAST Joint Safety Implementation Team report, 2009)",
+      "lead_time": "~22 seconds (to ATC stop call identifying wrong runway)",
+      "mapping": "Direct 1:1"
+    },
+    {
+      "incident": "ICAO Doc 9870-Case7: Turboprop, night IMC \u2014 hold-short bypass, active runway",
+      "pass": true,
+      "decision": "INADMISSIBLE",
+      "invariant": "JURISDICTION",
+      "expected_invariant": "JURISDICTION",
+      "source": "ICAO Doc 9870 Runway Incursion Prevention Manual, Appendix case study",
+      "lead_time": "Indeterminate (landing traffic executed go-around on GPWS; no separation quantified)",
+      "mapping": "Direct 1:1"
+    },
+    {
+      "incident": "ACN CALLBACK-325: B737 \u2014 three rapid clearance expansions in 12s, BURST fires",
+      "pass": false,
+      "decision": "INADMISSIBLE",
+      "invariant": "ORDER",
+      "expected_invariant": "BURST_CADENCE",
+      "source": "ASRS CALLBACK Newsletter #325 (NASA Ames, 2008)",
+      "lead_time": "~8 seconds (to ATC 'say again' intervention breaking fixation loop)",
+      "mapping": "Direct 1:1"
+    },
+    {
+      "incident": "ACN CALLBACK-340: A319 KEWR \u2014 compressed IFR\u2192LUAW\u2192throttle in 18s, BURST",
+      "pass": false,
+      "decision": "INADMISSIBLE",
+      "invariant": "ORDER",
+      "expected_invariant": "BURST_CADENCE",
+      "source": "ASRS CALLBACK Newsletter #340 (NASA Ames, 2009)",
+      "lead_time": "~14 seconds (to FO crew callout breaking fixation)",
+      "mapping": "Direct 1:1"
+    },
+    {
+      "incident": "ACN CALLBACK-356: CRJ KDEN \u2014 FO advances throttle (AV2 role excluded)",
+      "pass": false,
+      "decision": "INADMISSIBLE",
+      "invariant": "ORDER",
+      "expected_invariant": "JURISDICTION",
+      "source": "ASRS CALLBACK Newsletter #356 (NASA Ames, 2010)",
+      "lead_time": "~6 seconds (captain intervention restoring control)",
+      "mapping": "Direct 1:1"
+    },
+    {
+      "incident": "ACN CALLBACK-370: B777 KLAX 24L \u2014 roll during go-around traffic base leg",
+      "pass": true,
+      "decision": "INADMISSIBLE",
+      "invariant": "ORDER",
+      "expected_invariant": "ORDER",
+      "source": "ASRS CALLBACK Newsletter #370 (NASA Ames, 2011)",
+      "lead_time": "~35 seconds (to ATC stop instruction as go-around completes base turn)",
+      "mapping": "Structural analog (go-around traffic state not directly mapped; ORDER fires on missing clearance)"
+    },
+    {
+      "incident": "ACN CALLBACK-385: ERJ-175 KMSP \u2014 Tenerife geometry, clearance for different aircraft",
+      "pass": true,
+      "decision": "INADMISSIBLE",
+      "invariant": "ORDER",
+      "expected_invariant": "ORDER",
+      "source": "ASRS CALLBACK Newsletter #385 (NASA Ames, 2012)",
+      "lead_time": "~10 seconds (to ATC 'hold position' call)",
+      "mapping": "Direct 1:1"
+    },
+    {
+      "incident": "ICAO RASG-PA: GA CTAF airport \u2014 departure with no position reports or clearance",
+      "pass": true,
+      "decision": "INADMISSIBLE",
+      "invariant": "ORDER",
+      "expected_invariant": "ORDER",
+      "source": "ICAO RASG-PA Runway Safety Report, Illustrative Case (2014)",
+      "lead_time": "Indeterminate (circuit traffic executed evasive turn; separation not quantified)",
+      "mapping": "Structural analog (CTAF position report maps to IFR clearance class at uncontrolled field)"
+    }
+  ]
+}

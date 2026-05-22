@@ -1,0 +1,88 @@
+{
+  "incident": "Fukushima Daiichi 2011 (FEMA ICS)",
+  "substrate": "FEMA ICS",
+  "scope": "Offsite Emergency Response Coordination",
+  "source": "NAIIC; ICANPS; IAEA 2015",
+  "reconstruction_type": "Structural Analog",
+  "precision_class": "Minute-level",
+  "external_trigger": "Tohoku M9.0 + tsunami (Mar 11 14:46/15:37 JST)",
+  "results": [
+    {
+      "step": 1,
+      "timestamp": 8400.0,
+      "actor": "ic_thompson",
+      "role": "IC",
+      "action": "conduct_size_up",
+      "decision": "ADMISSIBLE",
+      "invariant": null,
+      "from_state": "STANDBY",
+      "to_state": "ASSESSMENT"
+    },
+    {
+      "step": 2,
+      "timestamp": 8700.0,
+      "actor": "ic_thompson",
+      "role": "IC",
+      "action": "assess_resources",
+      "decision": "ADMISSIBLE",
+      "invariant": null,
+      "from_state": "ASSESSMENT",
+      "to_state": "ASSESSMENT"
+    },
+    {
+      "step": 3,
+      "timestamp": 10800.0,
+      "actor": "ic_thompson",
+      "role": "IC",
+      "action": "draft_objectives",
+      "decision": "ADMISSIBLE",
+      "invariant": null,
+      "from_state": "ASSESSMENT",
+      "to_state": "PLANNING"
+    },
+    {
+      "step": 4,
+      "timestamp": 13200.0,
+      "actor": "ic_thompson",
+      "role": "IC",
+      "action": "conduct_planning_meeting",
+      "decision": "ADMISSIBLE",
+      "invariant": null,
+      "from_state": "PLANNING",
+      "to_state": "PLANNING"
+    },
+    {
+      "step": 5,
+      "timestamp": 15000.0,
+      "actor": "ic_thompson",
+      "role": "IC",
+      "action": "activate_unified_command",
+      "decision": "ADMISSIBLE",
+      "invariant": null,
+      "from_state": "PLANNING",
+      "to_state": "UNIFIED_COMMAND"
+    },
+    {
+      "step": 6,
+      "timestamp": 18000.0,
+      "actor": "ic_thompson",
+      "role": "IC",
+      "action": "approve_iap",
+      "decision": "ADMISSIBLE",
+      "invariant": null,
+      "from_state": "UNIFIED_COMMAND",
+      "to_state": "UNIFIED_COMMAND"
+    },
+    {
+      "step": 7,
+      "timestamp": 23820.0,
+      "actor": "pm_kan_office",
+      "role": "Field_Resource",
+      "action": "issue_public_warning",
+      "decision": "INADMISSIBLE",
+      "invariant": "EXIT",
+      "from_state": "STANDBY",
+      "to_state": null
+    }
+  ]
+}

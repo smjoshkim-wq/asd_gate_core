@@ -1,0 +1,214 @@
+{
+  "test": "False Positive Pressure Test",
+  "date": "2026-05-21",
+  "substrates_direct": 10,
+  "substrates_cited": 4,
+  "traversals_run": 30,
+  "events_evaluated": 109,
+  "inadmissible_count": 0,
+  "result": "PASS",
+  "traversal_detail": [
+    {
+      "label": "AISTP Pass1 ResearchAgent wide-spacing",
+      "pass": true,
+      "steps": 4,
+      "inadmissible": []
+    },
+    {
+      "label": "AISTP Pass2 DeliveryAgent",
+      "pass": true,
+      "steps": 3,
+      "inadmissible": []
+    },
+    {
+      "label": "AISTP Pass3 tight-timing loop (no expansion)",
+      "pass": true,
+      "steps": 4,
+      "inadmissible": []
+    },
+    {
+      "label": "OrgWorkflow Pass1 Analyst wide-spacing",
+      "pass": true,
+      "steps": 3,
+      "inadmissible": []
+    },
+    {
+      "label": "OrgWorkflow Pass2 Manager",
+      "pass": true,
+      "steps": 2,
+      "inadmissible": []
+    },
+    {
+      "label": "OrgWorkflow Pass3 tight-timing (read loops)",
+      "pass": true,
+      "steps": 4,
+      "inadmissible": []
+    },
+    {
+      "label": "Aviation Pass1 Captain full forward path",
+      "pass": true,
+      "steps": 7,
+      "inadmissible": []
+    },
+    {
+      "label": "Aviation Pass2 second Captain",
+      "pass": true,
+      "steps": 4,
+      "inadmissible": []
+    },
+    {
+      "label": "Aviation Pass3 tight-timing RUNWAY_HOLD loops",
+      "pass": true,
+      "steps": 4,
+      "inadmissible": []
+    },
+    {
+      "label": "Nuclear Pass1 SRO wide-spacing",
+      "pass": true,
+      "steps": 5,
+      "inadmissible": []
+    },
+    {
+      "label": "Nuclear Pass2 RO",
+      "pass": true,
+      "steps": 2,
+      "inadmissible": []
+    },
+    {
+      "label": "Nuclear Pass3 tight-timing monitor loops",
+      "pass": true,
+      "steps": 5,
+      "inadmissible": []
+    },
+    {
+      "label": "FEMA Pass1 IC wide-spacing",
+      "pass": true,
+      "steps": 4,
+      "inadmissible": []
+    },
+    {
+      "label": "FEMA Pass2 OSC",
+      "pass": true,
+      "steps": 2,
+      "inadmissible": []
+    },
+    {
+      "label": "FEMA Pass3 tight-timing assessment loops",
+      "pass": true,
+      "steps": 3,
+      "inadmissible": []
+    },
+    {
+      "label": "Maritime Pass1 Master wide-spacing",
+      "pass": true,
+      "steps": 4,
+      "inadmissible": []
+    },
+    {
+      "label": "Maritime Pass2 OOW",
+      "pass": true,
+      "steps": 3,
+      "inadmissible": []
+    },
+    {
+      "label": "Maritime Pass3 tight-timing position loops",
+      "pass": true,
+      "steps": 4,
+      "inadmissible": []
+    },
+    {
+      "label": "Legal Pass1 Prosecutor wide-spacing",
+      "pass": true,
+      "steps": 5,
+      "inadmissible": []
+    },
+    {
+      "label": "Legal Pass2 Judge",
+      "pass": true,
+      "steps": 3,
+      "inadmissible": []
+    },
+    {
+      "label": "Legal Pass3 Defense tight-timing (L2 loops, no expansion)",
+      "pass": true,
+      "steps": 3,
+      "inadmissible": []
+    },
+    {
+      "label": "Pharma Pass1 Sponsor wide-spacing",
+      "pass": true,
+      "steps": 3,
+      "inadmissible": []
+    },
+    {
+      "label": "Pharma Pass2 PI wide-spacing",
+      "pass": true,
+      "steps": 4,
+      "inadmissible": []
+    },
+    {
+      "label": "Pharma Pass3 tight-timing preclinical loops (no expansion)",
+      "pass": true,
+      "steps": 4,
+      "inadmissible": []
+    },
+    {
+      "label": "Construction Pass1 GC wide-spacing",
+      "pass": true,
+      "steps": 5,
+      "inadmissible": []
+    },
+    {
+      "label": "Construction Pass2 Inspector",
+      "pass": true,
+      "steps": 2,
+      "inadmissible": []
+    },
+    {
+      "label": "Construction Pass3 tight-timing E1 loops (no expansion)",
+      "pass": true,
+      "steps": 4,
+      "inadmissible": []
+    },
+    {
+      "label": "SupplyChain Pass1 Shipper wide-spacing",
+      "pass": true,
+      "steps": 3,
+      "inadmissible": []
+    },
+    {
+      "label": "SupplyChain Pass2 ProcurementOfc S1 sequence",
+      "pass": true,
+      "steps": 2,
+      "inadmissible": []
+    },
+    {
+      "label": "SupplyChain Pass3 tight-timing S1 loops in PRODUCTION (no expansion)",
+      "pass": true,
+      "steps": 4,
+      "inadmissible": []
+    }
+  ],
+  "wave2_b01_citations": [
+    {
+      "substrate": "GitHub",
+      "b01_result": "ADMISSIBLE (4/4)",
+      "hardware": "May 20, 2026"
+    },
+    {
+      "substrate": "Aviation",
+      "b01_result": "ADMISSIBLE (4/4)",
+      "hardware": "May 20, 2026"
+    },
+    {
+      "substrate": "Financial",
+      "b01_result": "ADMISSIBLE (3/3)",
+      "hardware": "May 20, 2026"
+    },
+    {
+      "substrate": "Clinical",
+      "b01_result": "ADMISSIBLE (4/4)",
+      "hardware": "May 20, 2026"
+    }
+  ]
+}

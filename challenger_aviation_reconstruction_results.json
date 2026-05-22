@@ -1,0 +1,71 @@
+{
+  "incident": "Challenger STS-51-L \u2014 Launch Sequence",
+  "source": "Rogers Commission Vol. III; STS-51-L A/G transcripts",
+  "compiler": "aviation_compiler_v0_1",
+  "reconstruction_type": "Substrate-specificity test",
+  "events": [
+    {
+      "step": 1,
+      "timestamp": 0.0,
+      "action": "monitor_systems",
+      "decision": "ADMISSIBLE",
+      "invariant": null,
+      "from_state": "IDLE",
+      "to_state": "PREFLIGHT"
+    },
+    {
+      "step": 2,
+      "timestamp": 100.0,
+      "action": "read_checklist",
+      "decision": "ADMISSIBLE",
+      "invariant": null,
+      "from_state": "PREFLIGHT",
+      "to_state": "PREFLIGHT"
+    },
+    {
+      "step": 3,
+      "timestamp": 200.0,
+      "action": "check_instruments",
+      "decision": "ADMISSIBLE",
+      "invariant": null,
+      "from_state": "PREFLIGHT",
+      "to_state": "PREFLIGHT"
+    },
+    {
+      "step": 4,
+      "timestamp": 300.0,
+      "action": "receive_ife_clearance",
+      "decision": "ADMISSIBLE",
+      "invariant": null,
+      "from_state": "PREFLIGHT",
+      "to_state": "TAXIING"
+    },
+    {
+      "step": 5,
+      "timestamp": 400.0,
+      "action": "receive_luaw_clearance",
+      "decision": "ADMISSIBLE",
+      "invariant": null,
+      "from_state": "TAXIING",
+      "to_state": "RUNWAY_HOLD"
+    },
+    {
+      "step": 6,
+      "timestamp": 500.0,
+      "action": "receive_takeoff_clearance",
+      "decision": "ADMISSIBLE",
+      "invariant": null,
+      "from_state": "RUNWAY_HOLD",
+      "to_state": "TAKEOFF_CLEARED"
+    },
+    {
+      "step": 7,
+      "timestamp": 540.0,
+      "action": "initiate_takeoff_roll",
+      "decision": "ADMISSIBLE",
+      "invariant": null,
+      "from_state": "TAKEOFF_CLEARED",
+      "to_state": "AIRBORNE"
+    }
+  ]
+}

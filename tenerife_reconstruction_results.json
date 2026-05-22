@@ -1,0 +1,70 @@
+{
+  "incident": "Tenerife 1977",
+  "flight": "KLM4805",
+  "source": "ICAO/Spanish Ministry of Transport Accident Report",
+  "results": [
+    {
+      "step": 1,
+      "timestamp": 0.0,
+      "action": "monitor_atis",
+      "decision": "ADMISSIBLE",
+      "invariant": null,
+      "from_state": "IDLE",
+      "to_state": "PREFLIGHT"
+    },
+    {
+      "step": 2,
+      "timestamp": 30.0,
+      "action": "read_checklist",
+      "decision": "ADMISSIBLE",
+      "invariant": null,
+      "from_state": "PREFLIGHT",
+      "to_state": "PREFLIGHT"
+    },
+    {
+      "step": 3,
+      "timestamp": 480.0,
+      "action": "receive_ife_clearance",
+      "decision": "ADMISSIBLE",
+      "invariant": null,
+      "from_state": "PREFLIGHT",
+      "to_state": "TAXIING"
+    },
+    {
+      "step": 4,
+      "timestamp": 900.0,
+      "action": "receive_luaw_clearance",
+      "decision": "ADMISSIBLE",
+      "invariant": null,
+      "from_state": "TAXIING",
+      "to_state": "RUNWAY_HOLD"
+    },
+    {
+      "step": 5,
+      "timestamp": 955.0,
+      "action": "visual_sweep_approach",
+      "decision": "ADMISSIBLE",
+      "invariant": null,
+      "from_state": "RUNWAY_HOLD",
+      "to_state": "RUNWAY_HOLD"
+    },
+    {
+      "step": 6,
+      "timestamp": 960.0,
+      "action": "check_instruments",
+      "decision": "ADMISSIBLE",
+      "invariant": null,
+      "from_state": "RUNWAY_HOLD",
+      "to_state": "RUNWAY_HOLD"
+    },
+    {
+      "step": 7,
+      "timestamp": 964.0,
+      "action": "initiate_takeoff_roll",
+      "decision": "INADMISSIBLE",
+      "invariant": "ORDER",
+      "from_state": "RUNWAY_HOLD",
+      "to_state": null
+    }
+  ]
+}

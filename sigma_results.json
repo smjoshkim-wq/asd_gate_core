@@ -1,0 +1,30 @@
+{
+  "empire_psexec_dcerpc_tcp_svcctl_2020-09-20121": {
+    "total_events": 4348,
+    "sigma_events_hit": 0,
+    "sigma_session_detected": false,
+    "sigma_pct": 0.0,
+    "rules_fired": []
+  },
+  "empire_mimikatz_logonpasswords_2020-08-071032": {
+    "total_events": 6026,
+    "sigma_events_hit": 0,
+    "sigma_session_detected": false,
+    "sigma_pct": 0.0,
+    "rules_fired": []
+  },
+  "empire_dcsync_dcerpc_drsuapi_DsGetNCChanges_2": {
+    "total_events": 8465,
+    "sigma_events_hit": 0,
+    "sigma_session_detected": false,
+    "sigma_pct": 0.0,
+    "rules_fired": []
+  },
+  "empire_launcher_vbs_2020-09-04160940": {
+    "total_events": 2067,
+    "sigma_events_hit": 0,
+    "sigma_session_detected": false,
+    "sigma_pct": 0.0,
+    "rules_fired": []
+  }
+}

@@ -1,0 +1,122 @@
+{
+  "incident": "Deepwater Horizon / Macondo Well Blowout 2010",
+  "source": "BOEMRE JIT Report Vol. I-II; CSB Vol. 2; National Commission Report",
+  "compiler": "petroleum_compiler_v0_1",
+  "reconstruction_type": "Direct 1:1",
+  "sequences": {
+    "order": [
+      {
+        "step": 1,
+        "timestamp": 0.0,
+        "action": "monitor_mud_returns",
+        "decision": "ADMISSIBLE",
+        "invariant": null,
+        "from_state": "CEMENT_EVAL",
+        "to_state": "CEMENT_EVAL"
+      },
+      {
+        "step": 2,
+        "timestamp": 5.0,
+        "action": "conduct_negative_pressure_test",
+        "decision": "ADMISSIBLE",
+        "invariant": null,
+        "from_state": "CEMENT_EVAL",
+        "to_state": "NEGATIVE_TEST"
+      },
+      {
+        "step": 3,
+        "timestamp": 15.0,
+        "action": "initiate_displacement",
+        "decision": "INADMISSIBLE",
+        "invariant": "ORDER",
+        "from_state": "NEGATIVE_TEST",
+        "to_state": null
+      }
+    ],
+    "jurisdiction": [
+      {
+        "step": 1,
+        "timestamp": 100.0,
+        "action": "submit_displacement_clearance",
+        "decision": "INADMISSIBLE",
+        "invariant": "JURISDICTION",
+        "from_state": "CEMENT_EVAL",
+        "to_state": null
+      }
+    ],
+    "burst_cadence": [
+      {
+        "step": 1,
+        "timestamp": 200.0,
+        "action": "monitor_mud_returns",
+        "decision": "ADMISSIBLE",
+        "invariant": null,
+        "from_state": "STANDBY",
+        "to_state": "DRILLING"
+      },
+      {
+        "step": 2,
+        "timestamp": 201.0,
+        "action": "drill_ahead",
+        "decision": "ADMISSIBLE",
+        "invariant": null,
+        "from_state": "DRILLING",
+        "to_state": "CASING_SET"
+      },
+      {
+        "step": 3,
+        "timestamp": 202.0,
+        "action": "run_casing",
+        "decision": "ADMISSIBLE",
+        "invariant": null,
+        "from_state": "CASING_SET",
+        "to_state": "CEMENTING"
+      },
+      {
+        "step": 4,
+        "timestamp": 203.0,
+        "action": "pump_cement_plug",
+        "decision": "ADMISSIBLE",
+        "invariant": null,
+        "from_state": "CEMENTING",
+        "to_state": "CEMENT_EVAL"
+      },
+      {
+        "step": 5,
+        "timestamp": 204.0,
+        "action": "conduct_negative_pressure_test",
+        "decision": "ADMISSIBLE",
+        "invariant": null,
+        "from_state": "CEMENT_EVAL",
+        "to_state": "NEGATIVE_TEST"
+      },
+      {
+        "step": 6,
+        "timestamp": 205.0,
+        "action": "accept_barrier_test_pass",
+        "decision": "ADMISSIBLE",
+        "invariant": null,
+        "from_state": "NEGATIVE_TEST",
+        "to_state": "BARRIER_VERIFIED"
+      },
+      {
+        "step": 7,
+        "timestamp": 206.0,
+        "action": "initiate_displacement",
+        "decision": "ADMISSIBLE",
+        "invariant": null,
+        "from_state": "BARRIER_VERIFIED",
+        "to_state": "DISPLACING"
+      },
+      {
+        "step": 8,
+        "timestamp": 207.0,
+        "action": "activate_emergency_disconnect",
+        "decision": "INADMISSIBLE",
+        "invariant": "BURST_CADENCE",
+        "from_state": "DISPLACING",
+        "to_state": "EMERGENCY"
+      }
+    ]
+  }
+}

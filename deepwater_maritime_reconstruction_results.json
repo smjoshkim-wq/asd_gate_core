@@ -1,0 +1,103 @@
+{
+  "incident": "Deepwater Horizon \u2014 Bridge Response Phase",
+  "source": "BOEMRE JIT Vol. I Ch. 5; CSB Vol. 3",
+  "compiler": "maritime_compiler_v0_1",
+  "reconstruction_type": "Structural analog",
+  "substrate_specificity_finding": "Maritime substrate did not fire under conservative interpretation; fires JURISDICTION under non-Master Mayday interpretation",
+  "sequences": {
+    "primary_conservative": [
+      {
+        "step": 1,
+        "timestamp": 0.0,
+        "action": "plot_position",
+        "decision": "ADMISSIBLE",
+        "invariant": null,
+        "from_state": "STANDBY",
+        "to_state": "MONITORING"
+      },
+      {
+        "step": 2,
+        "timestamp": 1.0,
+        "action": "verify_course",
+        "decision": "ADMISSIBLE",
+        "invariant": null,
+        "from_state": "MONITORING",
+        "to_state": "MONITORING"
+      },
+      {
+        "step": 3,
+        "timestamp": 2.0,
+        "action": "report_position_vts",
+        "decision": "INADMISSIBLE",
+        "invariant": "JURISDICTION",
+        "from_state": "MONITORING",
+        "to_state": null
+      },
+      {
+        "step": 4,
+        "timestamp": 3.0,
+        "action": "sound_general_alarm",
+        "decision": "INADMISSIBLE",
+        "invariant": "JURISDICTION",
+        "from_state": "MONITORING",
+        "to_state": null
+      },
+      {
+        "step": 5,
+        "timestamp": 4.0,
+        "action": "order_muster_stations",
+        "decision": "INADMISSIBLE",
+        "invariant": "JURISDICTION",
+        "from_state": "MONITORING",
+        "to_state": null
+      },
+      {
+        "step": 6,
+        "timestamp": 5.0,
+        "action": "transmit_mayday",
+        "decision": "INADMISSIBLE",
+        "invariant": "JURISDICTION",
+        "from_state": "MONITORING",
+        "to_state": null
+      },
+      {
+        "step": 7,
+        "timestamp": 6.0,
+        "action": "order_abandon_ship",
+        "decision": "INADMISSIBLE",
+        "invariant": "JURISDICTION",
+        "from_state": "MONITORING",
+        "to_state": null
+      }
+    ],
+    "alternative_non_master": [
+      {
+        "step": 1,
+        "timestamp": 100.0,
+        "action": "plot_position",
+        "decision": "ADMISSIBLE",
+        "invariant": null,
+        "from_state": "STANDBY",
+        "to_state": "MONITORING"
+      },
+      {
+        "step": 2,
+        "timestamp": 101.0,
+        "action": "report_position_vts",
+        "decision": "INADMISSIBLE",
+        "invariant": "ORDER",
+        "from_state": "MONITORING",
+        "to_state": null
+      },
+      {
+        "step": 3,
+        "timestamp": 102.0,
+        "action": "transmit_mayday",
+        "decision": "INADMISSIBLE",
+        "invariant": "JURISDICTION",
+        "from_state": "MONITORING",
+        "to_state": null
+      }
+    ]
+  }
+}

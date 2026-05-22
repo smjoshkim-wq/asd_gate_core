@@ -1,0 +1,110 @@
+{
+  "incident": "Fukushima Daiichi 2011 (Nuclear)",
+  "substrate": "Nuclear",
+  "unit": "Unit 1",
+  "source": "NAIIC; ICANPS; IAEA 2015; Yoshida Hearings",
+  "reconstruction_type": "Direct 1:1",
+  "precision_class": "Hour-level",
+  "external_trigger": "Tohoku M9.0 earthquake + tsunami (Mar 11 14:46/15:37 JST)",
+  "results": [
+    {
+      "step": 1,
+      "timestamp": 0.0,
+      "actor": "ro_jones",
+      "role": "RO",
+      "action": "check_parameters",
+      "decision": "ADMISSIBLE",
+      "invariant": null,
+      "from_state": "STANDBY",
+      "to_state": "MONITORING"
+    },
+    {
+      "step": 2,
+      "timestamp": 60.0,
+      "actor": "ro_jones",
+      "role": "RO",
+      "action": "adjust_coolant_flow",
+      "decision": "ADMISSIBLE",
+      "invariant": null,
+      "from_state": "MONITORING",
+      "to_state": "OPERATING"
+    },
+    {
+      "step": 3,
+      "timestamp": 600.0,
+      "actor": "ro_jones",
+      "role": "RO",
+      "action": "verify_system_status",
+      "decision": "ADMISSIBLE",
+      "invariant": null,
+      "from_state": "OPERATING",
+      "to_state": "MONITORING"
+    },
+    {
+      "step": 4,
+      "timestamp": 3060.0,
+      "actor": "sro_chen",
+      "role": "SRO_SM",
+      "action": "check_parameters",
+      "decision": "ADMISSIBLE",
+      "invariant": null,
+      "from_state": "STANDBY",
+      "to_state": "MONITORING"
+    },
+    {
+      "step": 5,
+      "timestamp": 3120.0,
+      "actor": "sro_chen",
+      "role": "SRO_SM",
+      "action": "adjust_coolant_flow",
+      "decision": "ADMISSIBLE",
+      "invariant": null,
+      "from_state": "MONITORING",
+      "to_state": "OPERATING"
+    },
+    {
+      "step": 6,
+      "timestamp": 3300.0,
+      "actor": "sro_chen",
+      "role": "SRO_SM",
+      "action": "enter_eop",
+      "decision": "ADMISSIBLE",
+      "invariant": null,
+      "from_state": "OPERATING",
+      "to_state": "EMERGENCY_RESPONSE"
+    },
+    {
+      "step": 7,
+      "timestamp": 3600.0,
+      "actor": "sro_chen",
+      "role": "SRO_SM",
+      "action": "initiate_hpi",
+      "decision": "ADMISSIBLE",
+      "invariant": null,
+      "from_state": "EMERGENCY_RESPONSE",
+      "to_state": "EMERGENCY_RESPONSE"
+    },
+    {
+      "step": 8,
+      "timestamp": 101880.0,
+      "actor": "sro_chen",
+      "role": "SRO_SM",
+      "action": "actuate_eccs",
+      "decision": "ADMISSIBLE",
+      "invariant": null,
+      "from_state": "EMERGENCY_RESPONSE",
+      "to_state": "EMERGENCY_RESPONSE"
+    },
+    {
+      "step": 9,
+      "timestamp": 105240.0,
+      "actor": "hq_takekuro",
+      "role": "STA",
+      "action": "throttle_eccs",
+      "decision": "INADMISSIBLE",
+      "invariant": "EXIT",
+      "from_state": "STANDBY",
+      "to_state": null
+    }
+  ]
+}

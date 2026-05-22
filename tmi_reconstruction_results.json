@@ -1,0 +1,85 @@
+{
+  "incident": "Three Mile Island Unit 2, March 28, 1979",
+  "domain": "Nuclear Facility Operations",
+  "compiler": "nuclear_compiler_v0_1.py",
+  "gate_kernel": "domain_compiler_v0_9.py",
+  "invariant": "ORDER",
+  "gate_fires_at_step": 6,
+  "gate_fires_at_time": "t+624s (4:11 AM, March 28, 1979)",
+  "lead_time_to_operator_awareness": "~27 minutes (operator awareness of uncovery at 4:38 AM)",
+  "lead_time_to_core_damage": "~110 minutes (significant core damage ~6:00 AM)",
+  "lead_precision": "Day-level (NUREG-0600 Table 1 minute-resolution timestamps)",
+  "mapping_type": "Direct 1:1",
+  "methodology_note": "Multi-actor nuclear control room requires per-actor session anchors (TMI2_RO, TMI2_SRO). Single shift_id incorrectly triggers EXIT invariant. Per-actor shift_id is the correct modeling pattern for concurrent-role domains.",
+  "primary_sources": [
+    "NRC NUREG-0600 (1979) \u2014 Table 1 Chronology of Events",
+    "Kemeny Commission Report (1979) \u2014 Chapter 4 Sequence of Events",
+    "NRC Special Inquiry Group / Rogovin Report (1980) \u2014 Operator Action Analysis",
+    "NUREG-0737 (1980) \u2014 TMI Lessons Learned"
+  ],
+  "events": [
+    {
+      "step": 1,
+      "actor": "ro_jones",
+      "action": "acknowledge_alarm",
+      "timestamp_offset_s": 84.0,
+      "clock_time_approx": "4:02 AM",
+      "decision": "ADMISSIBLE",
+      "invariant": null
+    },
+    {
+      "step": 2,
+      "actor": "ro_jones",
+      "action": "verify_system_status",
+      "timestamp_offset_s": 84.0,
+      "clock_time_approx": "4:02 AM",
+      "decision": "ADMISSIBLE",
+      "invariant": null
+    },
+    {
+      "step": 3,
+      "actor": "sro_garcia",
+      "action": "check_parameters",
+      "timestamp_offset_s": 204.0,
+      "clock_time_approx": "4:04 AM",
+      "decision": "ADMISSIBLE",
+      "invariant": null
+    },
+    {
+      "step": 4,
+      "actor": "ro_jones",
+      "action": "read_indicators",
+      "timestamp_offset_s": 384.0,
+      "clock_time_approx": "4:06 AM",
+      "decision": "ADMISSIBLE",
+      "invariant": null
+    },
+    {
+      "step": 5,
+      "actor": "sro_garcia",
+      "action": "verify_system_status",
+      "timestamp_offset_s": 504.0,
+      "clock_time_approx": "4:08 AM",
+      "decision": "ADMISSIBLE",
+      "invariant": null
+    },
+    {
+      "step": 6,
+      "actor": "sro_garcia",
+      "action": "throttle_eccs",
+      "timestamp_offset_s": 624.0,
+      "clock_time_approx": "4:11 AM",
+      "decision": "INADMISSIBLE",
+      "invariant": "ORDER"
+    },
+    {
+      "step": 7,
+      "actor": "ro_jones",
+      "action": "check_parameters",
+      "timestamp_offset_s": 2244.0,
+      "clock_time_approx": "4:38 AM",
+      "decision": "ADMISSIBLE",
+      "invariant": null
+    }
+  ]
+}

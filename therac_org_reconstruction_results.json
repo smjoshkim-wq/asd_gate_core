@@ -1,0 +1,146 @@
+{
+  "incident": "Therac-25 \u2014 AECL response pattern (6 incidents)",
+  "source": "Leveson & Turner 1993",
+  "compiler": "org_workflow_compiler_v0_1",
+  "reconstruction_type": "Structural analog \u2014 cross-incident stability",
+  "responses": {
+    "KENNESTONE_RESPONSE_1985_06": [
+      {
+        "step": 1,
+        "timestamp": 0.0,
+        "action": "read_document",
+        "decision": "ADMISSIBLE",
+        "invariant": null
+      },
+      {
+        "step": 2,
+        "timestamp": 10.0,
+        "action": "assess_risk",
+        "decision": "ADMISSIBLE",
+        "invariant": null
+      },
+      {
+        "step": 3,
+        "timestamp": 20.0,
+        "action": "recommend_approval",
+        "decision": "INADMISSIBLE",
+        "invariant": "EXIT"
+      }
+    ],
+    "ONTARIO_RESPONSE_1985_07": [
+      {
+        "step": 1,
+        "timestamp": 0.0,
+        "action": "read_document",
+        "decision": "ADMISSIBLE",
+        "invariant": null
+      },
+      {
+        "step": 2,
+        "timestamp": 10.0,
+        "action": "assess_risk",
+        "decision": "ADMISSIBLE",
+        "invariant": null
+      },
+      {
+        "step": 3,
+        "timestamp": 20.0,
+        "action": "recommend_approval",
+        "decision": "INADMISSIBLE",
+        "invariant": "EXIT"
+      }
+    ],
+    "YAKIMA_RESPONSE_1985_12": [
+      {
+        "step": 1,
+        "timestamp": 0.0,
+        "action": "read_document",
+        "decision": "ADMISSIBLE",
+        "invariant": null
+      },
+      {
+        "step": 2,
+        "timestamp": 10.0,
+        "action": "assess_risk",
+        "decision": "ADMISSIBLE",
+        "invariant": null
+      },
+      {
+        "step": 3,
+        "timestamp": 20.0,
+        "action": "recommend_approval",
+        "decision": "INADMISSIBLE",
+        "invariant": "EXIT"
+      }
+    ],
+    "EAST_TEXAS_RESPONSE_1986_03": [
+      {
+        "step": 1,
+        "timestamp": 0.0,
+        "action": "read_document",
+        "decision": "ADMISSIBLE",
+        "invariant": null
+      },
+      {
+        "step": 2,
+        "timestamp": 10.0,
+        "action": "assess_risk",
+        "decision": "ADMISSIBLE",
+        "invariant": null
+      },
+      {
+        "step": 3,
+        "timestamp": 20.0,
+        "action": "recommend_approval",
+        "decision": "INADMISSIBLE",
+        "invariant": "EXIT"
+      }
+    ],
+    "EAST_TEXAS_RESPONSE_1986_04": [
+      {
+        "step": 1,
+        "timestamp": 0.0,
+        "action": "read_document",
+        "decision": "ADMISSIBLE",
+        "invariant": null
+      },
+      {
+        "step": 2,
+        "timestamp": 10.0,
+        "action": "assess_risk",
+        "decision": "ADMISSIBLE",
+        "invariant": null
+      },
+      {
+        "step": 3,
+        "timestamp": 20.0,
+        "action": "recommend_approval",
+        "decision": "INADMISSIBLE",
+        "invariant": "EXIT"
+      }
+    ],
+    "YAKIMA_RESPONSE_1987_01": [
+      {
+        "step": 1,
+        "timestamp": 0.0,
+        "action": "read_document",
+        "decision": "ADMISSIBLE",
+        "invariant": null
+      },
+      {
+        "step": 2,
+        "timestamp": 10.0,
+        "action": "assess_risk",
+        "decision": "ADMISSIBLE",
+        "invariant": null
+      },
+      {
+        "step": 3,
+        "timestamp": 20.0,
+        "action": "recommend_approval",
+        "decision": "INADMISSIBLE",
+        "invariant": "EXIT"
+      }
+    ]
+  }
+}

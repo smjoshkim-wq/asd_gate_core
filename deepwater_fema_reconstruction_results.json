@@ -1,0 +1,57 @@
+{
+  "incident": "Deepwater Horizon \u2014 Federal Response Phase (April 22 - May 1, 2010)",
+  "source": "USCG ISPR; National Commission Chief Counsel's Report; GAO-11-90",
+  "compiler": "fema_compiler_v0_1",
+  "reconstruction_type": "Response failure (structural analog)",
+  "sequences": {
+    "order": [
+      {
+        "step": 1,
+        "timestamp": 0.0,
+        "action": "conduct_size_up",
+        "decision": "ADMISSIBLE",
+        "invariant": null,
+        "from_state": "STANDBY",
+        "to_state": "ASSESSMENT"
+      },
+      {
+        "step": 2,
+        "timestamp": 1.0,
+        "action": "verify_incident_scope",
+        "decision": "ADMISSIBLE",
+        "invariant": null,
+        "from_state": "ASSESSMENT",
+        "to_state": "ASSESSMENT"
+      },
+      {
+        "step": 3,
+        "timestamp": 2.0,
+        "action": "draft_objectives",
+        "decision": "ADMISSIBLE",
+        "invariant": null,
+        "from_state": "ASSESSMENT",
+        "to_state": "PLANNING"
+      },
+      {
+        "step": 4,
+        "timestamp": 3.0,
+        "action": "deploy_strike_team",
+        "decision": "INADMISSIBLE",
+        "invariant": "ORDER",
+        "from_state": "PLANNING",
+        "to_state": null
+      }
+    ],
+    "jurisdiction": [
+      {
+        "step": 1,
+        "timestamp": 100.0,
+        "action": "hold_press_conference",
+        "decision": "INADMISSIBLE",
+        "invariant": "JURISDICTION",
+        "from_state": "STANDBY",
+        "to_state": null
+      }
+    ]
+  }
+}

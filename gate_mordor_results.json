@@ -1,0 +1,114 @@
+{
+  "benchmark": "Mordor/OTRF-Security-Datasets",
+  "compiler_version": "v0.7.1",
+  "domain": "Windows Sysmon",
+  "timestamp": "2026-05-21T22:20:49Z",
+  "dataset_url": "https://github.com/OTRF/Security-Datasets",
+  "citation": "Rodriguez, R. et al. (2020). Mordor: Adversary Attack Simulation Data Sharing for Detection Engineering. GitHub / OTRF.",
+  "total_scenarios": 4,
+  "total_events": 5399,
+  "events_skipped": 15507,
+  "attack": {
+    "sessions_total": 4,
+    "sessions_detected": 4,
+    "session_detection_pct": 100.0,
+    "events_inadmissible_pct": 49.25
+  },
+  "overall_indeterminate_pct": 43.53,
+  "invariant_distribution": {
+    "ORDER": 1510,
+    "JURISDICTION": 78,
+    "HYSTERESIS": 206,
+    "BURST_CADENCE": 865
+  },
+  "scenario_results": [
+    {
+      "name": "empire_mimikatz_logonpasswords_2020-08-0",
+      "attack": "empire_mimikatz_logonpasswords_2020-08-07103224",
+      "attck_id": "USER-SUPPLIED",
+      "category": "user_supplied",
+      "expected": "Inferred from trajectory",
+      "file_path": "mordor_data/mimikatz/empire_mimikatz_logonpasswords_2020-08-07103224.json",
+      "status": "DETECTED",
+      "detected": true,
+      "fired": true,
+      "events_total": 679,
+      "events_skipped": 5347,
+      "events_admissible": 84,
+      "events_inadmissible": 323,
+      "events_indeterminate": 272,
+      "invariant_distribution": {
+        "ORDER": 221,
+        "JURISDICTION": 21,
+        "HYSTERESIS": 18,
+        "BURST_CADENCE": 63
+      }
+    },
+    {
+      "name": "empire_psexec_dcerpc_tcp_svcctl_2020-09-",
+      "attack": "empire_psexec_dcerpc_tcp_svcctl_2020-09-20121608",
+      "attck_id": "USER-SUPPLIED",
+      "category": "user_supplied",
+      "expected": "Inferred from trajectory",
+      "file_path": "mordor_data/psexec/empire_psexec_dcerpc_tcp_svcctl_2020-09-20121608.json",
+      "status": "DETECTED",
+      "detected": true,
+      "fired": true,
+      "events_total": 2945,
+      "events_skipped": 1403,
+      "events_admissible": 73,
+      "events_inadmissible": 1378,
+      "events_indeterminate": 1494,
+      "invariant_distribution": {
+        "ORDER": 803,
+        "JURISDICTION": 33,
+        "HYSTERESIS": 142,
+        "BURST_CADENCE": 400
+      }
+    },
+    {
+      "name": "empire_launcher_vbs_2020-09-04160940",
+      "attack": "empire_launcher_vbs_2020-09-04160940",
+      "attck_id": "USER-SUPPLIED",
+      "category": "user_supplied",
+      "expected": "Inferred from trajectory",
+      "file_path": "mordor_data/vbs_launch/empire_launcher_vbs_2020-09-04160940.json",
+      "status": "DETECTED",
+      "detected": true,
+      "fired": true,
+      "events_total": 1190,
+      "events_skipped": 877,
+      "events_admissible": 179,
+      "events_inadmissible": 687,
+      "events_indeterminate": 324,
+      "invariant_distribution": {
+        "ORDER": 251,
+        "JURISDICTION": 13,
+        "HYSTERESIS": 39,
+        "BURST_CADENCE": 384
+      }
+    },
+    {
+      "name": "empire_dcsync_dcerpc_drsuapi_DsGetNCChan",
+      "attack": "empire_dcsync_dcerpc_drsuapi_DsGetNCChanges_2020-09-21185829",
+      "attck_id": "USER-SUPPLIED",
+      "category": "user_supplied",
+      "expected": "Inferred from trajectory",
+      "file_path": "mordor_data/dcsync/empire_dcsync_dcerpc_drsuapi_DsGetNCChanges_2020-09-21185829.json",
+      "status": "DETECTED",
+      "detected": true,
+      "fired": true,
+      "events_total": 585,
+      "events_skipped": 7880,
+      "events_admissible": 54,
+      "events_inadmissible": 271,
+      "events_indeterminate": 260,
+      "invariant_distribution": {
+        "ORDER": 235,
+        "JURISDICTION": 11,
+        "HYSTERESIS": 7,
+        "BURST_CADENCE": 18
+      }
+    }
+  ]
+}

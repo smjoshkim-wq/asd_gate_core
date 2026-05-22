@@ -1,0 +1,40 @@
+{
+  "incident": "2008 Financial Crisis \u2014 Citigroup CDO Waiver Bypass",
+  "substrate": "financial",
+  "reconstruction_type": "Direct 1:1",
+  "compiler_anchor": "A01 (Underwriter bypasses audit, 2008 waiver bypass)",
+  "precision_class": "Quarter-level",
+  "lead_time_description": "November 2007 Bowen URGENT memo \u2192 ~10 months to Lehman collapse September 2008; ORDER fire on the geometric violation precedes market collapse by ~10 months",
+  "invariants_fired": [
+    {
+      "step": 2,
+      "invariant": "ORDER"
+    }
+  ],
+  "order_fired_at_step": 2,
+  "pre_order_admissible": true,
+  "geometry": "Underwriter executes F4_Advance from AUDIT_PENDING. F4_Advance is in Underwriter vocabulary at POOL_ACTIVE.flows (legitimate post-audit advance) but explicitly excluded from AUDIT_PENDING.flows. The action-class is in the role's global vocabulary but not in the current state's outflow graph \u2014 ORDER fires on the state-skip violation.",
+  "historical_anchor": {
+    "actor": "Richard Bowen, SVP and Business Chief Underwriter, Citigroup CLG",
+    "audit": "60% (2006) \u2192 80% (2007) failure rate against Citi guidelines",
+    "warning": "Nov 3, 2007 'URGENT' memo to Rubin / Bushnell / Crittenden / Howard",
+    "response": "Bowen demoted, staff cut 220\u21922; no remediation of bypass pattern",
+    "downstream": "Q1 2008 Citi writedowns ~$15B; Q4 2008 federal bailout ~$45B + ~$300B guarantees"
+  },
+  "events": [
+    {
+      "step": 1,
+      "actor_id": "citi_cdo_underwriting_desk",
+      "action": "asset_level_verification",
+      "decision": "ADMISSIBLE",
+      "invariant": null
+    },
+    {
+      "step": 2,
+      "actor_id": "citi_cdo_underwriting_desk",
+      "action": "advance_to_securitization",
+      "decision": "INADMISSIBLE",
+      "invariant": "ORDER"
+    }
+  ]
+}

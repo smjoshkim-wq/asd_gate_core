@@ -1,0 +1,38 @@
+{
+  "incident": "2008 Financial Crisis \u2014 Lehman Brothers Repo 105",
+  "substrate": "construction",
+  "reconstruction_type": "Structural Analog",
+  "precision_class": "Month-level",
+  "lead_time_description": "Matthew Lee letter May 16, 2008 \u2192 Lehman bankruptcy September 15, 2008 = ~4 months. ORDER fire at Q2 2008 quarter-end commitment (May 31) is ~3.5 months before bankruptcy. Compared to Bhopal (30 months) and Algo / Champlain (years), this is the shortest lead time observed for the DEFICIENCY_NOTED pattern.",
+  "pattern_class": "DEFICIENCY_NOTED commission (Algo / Champlain / Bhopal pattern)",
+  "invariants_fired": [
+    {
+      "step": 1,
+      "invariant": "ORDER"
+    }
+  ],
+  "order_fired_at_step": 1,
+  "geometry": "Owner (Lehman Brothers Holdings) executes A3_Commitment from DEFICIENCY_NOTED state. DEFICIENCY_NOTED.flows contains only H1_RemediationAuth; A3_Commitment is in Owner vocabulary at DESIGN and PERMIT_ISSUED but NOT at DEFICIENCY_NOTED. State-skip violation \u2192 ORDER fires.",
+  "cross_incident_stability_deficiency_pattern": [
+    "Algo Centre Mall 2012 (Owner H1 stall, ORDER)",
+    "Champlain Towers South 2021 (Owner H1 stall, ORDER)",
+    "Bhopal 1984 (UCC parent Owner, A3_Commitment from DEFICIENCY_NOTED, ORDER)",
+    "Lehman Repo 105 2008 (Lehman Holdings Owner, A3_Commitment from DEFICIENCY_NOTED, ORDER)"
+  ],
+  "claim_strengthened": "DEFICIENCY_NOTED pattern instantiated on four independent incidents spanning building structural failure, chemical process industrial failure, and financial accounting concealment. Same compiler, same invariant, same geometry; no compiler-side modifications between instances. The pattern is substrate-agnostic for any 'Owner has been notified of structural deficiency by engineering evidence and committed to non-remediation' geometry.",
+  "historical_anchor": {
+    "warning": "Matthew Lee letter, May 16, 2008 (Lehman Global Balance Sheet Officer)",
+    "deficiency_evidence": "$50B+ quarter-end Repo 105 usage; Linklaters UK-law opinion treated as true-sale accounting under SFAS 140; financial statements not fairly presenting financial position",
+    "owner_response": "Lee terminated; no restatement; no disclosure; continued Repo 105 program through Q2 ($50.4B) and Q3 ($24B) 2008",
+    "downstream": "September 15, 2008 Chapter 11 filing \u2014 largest US bankruptcy in history ($639B in assets); Valukas Examiner Report March 2010 confirmed timeline and pattern"
+  },
+  "events": [
+    {
+      "step": 1,
+      "actor_id": "lehman_holdings",
+      "action": "sign_schedule_a",
+      "decision": "INADMISSIBLE",
+      "invariant": "ORDER"
+    }
+  ]
+}
